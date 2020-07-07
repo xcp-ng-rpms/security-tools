@@ -1,6 +1,6 @@
 Name:           security-tools
 Version:        1.0.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Generates 3 uuids for a pool secret
 License:        GPLv3
 URL:            https://github.com/xcp-ng/security-tools
@@ -31,6 +31,9 @@ make install
 /usr/bin/pool_secret
 
 %changelog
+* Tue Jul 07 2020 Samuel Verschelde <stormi-xcp@ylix.fr> - 1.0.0-3
+- Rebuild for XCP-ng 8.2
+
 * Fri Dec 20 2019 Samuel Verschelde <stormi-xcp@ylix.fr> - 1.0.0-2
 - Rebuild for XCP-ng 8.1
 
