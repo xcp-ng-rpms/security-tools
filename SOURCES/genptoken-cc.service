@@ -1,0 +1,14 @@
+[Unit]
+Description=Generate a pool secret (ptoken) for Common Criteria mode
+Before=xapi.service
+ConditionPathExists=!/etc/xensource/ptoken
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/pool_secret_wrapper
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target
+
